@@ -1,0 +1,43 @@
+{
+  "yolo_model_path": "vision_tracking/models/yolov8n.pt",
+  "detection_confidence": 0.45,
+  "track_buffer": 30,
+  "cameras": [
+    {
+      "id": "cam_1",
+      "name": "正门入口",
+      "url": "test_videos/camera1.mp4",
+      "position": [5, 2, 5],
+      "direction": [-0.7, -0.2, -0.7],
+      "fov": 60,
+      "aspect_ratio": 1.777
+    },
+    {
+      "id": "cam_2",
+      "name": "左侧看台",
+      "url": "test_videos/camera2.mp4",
+      "position": [-5, 2, 5],
+      "direction": [0.7, -0.2, -0.7],
+      "fov": 60,
+      "aspect_ratio": 1.777
+    },
+    {
+      "id": "cam_3",
+      "name": "右侧看台",
+      "url": "test_videos/camera3.mp4",
+      "position": [5, 2, -5],
+      "direction": [-0.7, -0.2, 0.7],
+      "fov": 60,
+      "aspect_ratio": 1.777
+    },
+    {
+      "id": "cam_4",
+      "name": "中央高位",
+      "url": "test_videos/camera4.mp4",
+      "position": [0, 8, 0],
+      "direction": [0, -1, 0],
+      "fov": 60,
+      "aspect_ratio": 1.777
+    }
+  ]
+} 

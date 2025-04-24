@@ -1,0 +1,20 @@
+# 后端服务器依赖
+fastapi==0.104.1
+uvicorn==0.23.2
+websockets==11.0.3
+python-multipart==0.0.6
+pydantic==2.4.2
+
+# 计算机视觉跟踪
+opencv-python==4.8.0.76
+numpy==1.24.3
+torch==2.0.1
+torchvision==0.15.2
+ultralytics==8.0.120  # YOLOv8
+
+# 3D坐标转换
+scipy==1.10.1
+pyquaternion==0.9.9
+
+# 摄像机标定
+opencv-contrib-python==4.8.0.76 

@@ -1,0 +1,5 @@
+*.pyc
+.vscode
+.specstory
+output
+data

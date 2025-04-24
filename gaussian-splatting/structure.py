@@ -175,7 +175,8 @@ def classify_combined_view(cam, visible_structures, structure_centers, main_axis
 
 # 主流程
 if __name__ == "__main__":
-    ply_file = "output/truck/point_cloud/iteration_7000/point_cloud.ply"
+    # ply_file = "/output/truck/point_cloud/iteration_7000/point_cloud.ply"
+    ply_file = r"C:\Users\Reiny Gu\Desktop\VideoDirecting_MultiCamSceneEnhance\gaussian-splatting\output\truck\point_cloud\iteration_7000\point_cloud.ply"
 
     pcd = load_3dgs_pointcloud(ply_file)
     print(f"加载的点云包含 {len(pcd.points)} 个点")
@@ -183,7 +184,7 @@ if __name__ == "__main__":
     structures = extract_structures_dbscan(pcd, eps=0.1, min_points=100)
     structure_centers = compute_structure_centers(structures)
     #visualize_structures(structures)
-    camera_data = load_camera_poses("output/truck/cameras.json")
+    camera_data = load_camera_poses(r"C:\Users\Reiny Gu\Desktop\VideoDirecting_MultiCamSceneEnhance\gaussian-splatting\output\truck\cameras.json")
     visible_map = compute_visible_structures(camera_data, structure_centers, angle_threshold_deg=180)
     main_axis = estimate_main_axis(structure_centers)
     for cam_id in sorted(visible_map.keys()):
